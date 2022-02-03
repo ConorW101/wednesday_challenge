@@ -54,6 +54,7 @@ function division(num1, num2)
 function addToList(num1, num2, op, result) {
     let child = document.createElement(`li`);
     child.innerHTML = num1 + "" + op + "" + num2 + " = " + result;
+    child.classList.add(`list-group-item`)
     DOM.outputLst.appendChild(child);
 
 }
